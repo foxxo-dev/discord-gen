@@ -1,0 +1,99 @@
+:root {
+  --bg: #23272a;
+  --primary: #7289da;
+  --secondary: #2c2f33;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem 0 0 2.5rem;
+  margin: 0;
+  background: var(--secondary, black);
+  color: white;
+  font-family: 'gg sans', sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+form {
+  width: 40rem;
+  background: var(--bg, #2c2f33);
+  min-height: 20rem;
+  border-radius: 0.5rem;
+  border-left: var(--primary, #7289da) 0.5rem solid;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 0.5rem;
+}
+
+form input, form textarea {
+  all: unset;
+  font-size: 1.5rem;
+  color: white;
+  padding: 0.5rem;
+}
+
+#author {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+#title {
+  color: rgb(176, 176, 255);
+}
+
+#desc {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+#color {
+  border: 0;
+  border-radius: 100000vw;
+  width: 5rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+}
+
+#icon {
+  display: none;
+}
+
+#icon-png {
+  width: 2.5rem;
+  aspect-ratio: 1;
+  border-radius: 1000000vw;
+  overflow: hidden;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  background: var(--primary);
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  image-rendering: pixelated;
+}
+
+pre {
+  font-size: 1rem;
+  padding: 1rem;
+  background: var(--bg, #2c2f33);
+  border-radius: 0.5rem;
+  overflow: auto;
+  width: 50rem;
+}
